@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.nav-link {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.yellow {
+  width: 80px;
+  height: 4px;
+  background: gold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.small_yellow {
+  width: 60px;
+  height: 4px;
+  background: rgba(255, 215, 0, 0.39);
+  margin-top: 10px;
 }
+
+.cards-wrapper {
+  display: flex;
+
+}
+
+.card {
+  margin: .5rem;
+  /*width: calc(100%/3);*/
+}
+
+.c-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.my-img {
+  width: calc(100%/2);
+  
+}
+
+.my-img:hover {
+  outline: 4px solid gold;
+}
+
+.myP {
+  font-size: 10px;
+}
+
+.myTxt {
+  font-weight: bold;
+}
+
+.yep {
+  font-weight: lighter;
+}
+
+.myPhoto {
+  position: relative;
+  z-index: 0;
+
+
+}
+
+.myPhoto .label {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-image: linear-gradient(180deg, rgba(22,21,21,0.958420868347339) 0%, rgba(115,115,115,0.6587009803921569) 100%);
+  visibility: hidden;
+}
+
+.myPhoto:hover .label{
+visibility: visible;
+}
+
+

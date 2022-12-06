@@ -1,0 +1,13 @@
+.myNavBar {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  color: white;
+
+  a {
+    text-decoration: none;
+    color: gold;
+    cursor: pointer;
+  }
+
+}
